@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "make",
+			"args": [
+				"build"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "rust: cargo build"
+		},
+		{
+			"type": "cargo",
+			"command": "make",
+			"args": [
+				"clippy"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "rust: cargo clippy"
+		},
+		{
+			"type": "cargo",
+			"command": "make",
+			"args": [
+				"test"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test",
+			"label": "rust: cargo test"
+		},
+		{
+			"type": "cargo",
+			"command": "make",
+			"args": [
+				"run"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "rust: cargo run"
+		}
+	]
+}

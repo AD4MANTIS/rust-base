@@ -1,0 +1,23 @@
+[tasks.run]
+command = "cargo"
+args = ["run"]
+workspace = false
+cwd = "my-app"
+
+[tasks.build]
+command = "cargo"
+args = ["build"]
+workspace = false
+cwd = "my-app"
+
+[tasks.clippy]
+command = "cargo"
+args = ["clippy"]
+workspace = false
+cwd = "my-app"
+
+[tasks.test]
+command = "cargo"
+args = ["test"]
+workspace = false
+cwd = "my-app"

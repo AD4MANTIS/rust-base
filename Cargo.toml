@@ -1,11 +1,21 @@
-[package]
-name = "rust-base"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
 
-[dependencies]
+package.authors = ["AD4MANTIS"]
+package.version = "0.1.0"
+package.edition = "2021"
+
+members = ["my-app"]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+enum_glob_use = "forbid"
+pedantic = "deny"
+nursery = "deny"
+unwrap_used = "deny"
+
+[workspace.dependencies]
 thiserror = "1"
-tokio = { version = "1", features = ["full"] }
-
-[dev-dependencies]
-anyhow = "1"
+color-eyre = { version = "0.6.2", default-features = false }

@@ -4,7 +4,7 @@
 
 https://github.com/0atman/noboilerplate/blob/main/scripts/37-functional-rust.md
 
-Replace "my-app" Project wide with the new Project name.
+Replace "my-app" Project wide with the new Project name and also rename the corresponding Folder.
 
 ## Adding a lib
 
